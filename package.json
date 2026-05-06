@@ -1,0 +1,19 @@
+{
+  "name": "waly-platform",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "contracts"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @waly/web",
+    "dev:api": "npm run start:dev -w @waly/api",
+    "build:web": "npm run build -w @waly/web",
+    "build:api": "npm run build -w @waly/api",
+    "lint:web": "npm run lint -w @waly/web",
+    "lint:api": "npm run lint -w @waly/api",
+    "test:contracts": "npm run test -w @waly/contracts"
+  }
+}
